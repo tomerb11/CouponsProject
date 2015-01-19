@@ -25,12 +25,12 @@ public class User {
 	
 	/**
 	 * primary constructor for user type. uses setters to validate fields before saving
-	 * @param userId
-	 * @param firstName
-	 * @param lastName
-	 * @param userName
-	 * @param password
-	 * @param city
+	 * @param userId id 
+	 * @param firstName firstname
+	 * @param lastName lastname
+	 * @param userName username
+	 * @param password password
+	 * @param city city
 	 */
 	public User(int userId, String firstName, String lastName, String userName,
 			String password, String city) {

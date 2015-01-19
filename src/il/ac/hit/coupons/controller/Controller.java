@@ -411,8 +411,8 @@ public class Controller extends HttpServlet {
 	/**
 	 * method responsible for filtering the coupons list according their expire date
 	 * @return list of coupons that their expire date is greater than today
-	 * @throws CouponException
-	 * @throws ParseException
+	 * @throws CouponException coupon exception custom
+	 * @throws ParseException parse
 	 */
 	public static List<Coupon> getNonExpiredCoupons() throws CouponException, ParseException
 	{

@@ -29,18 +29,10 @@ else{
 
 <form action ="listofcoupons" method="get">
 <br>
-<button type="submit">Manage existing coupons</button><br>
+<button type="submit" class="btn btn-primary">Manage existing coupons</button><br>
 <br>
 </form>
 
-
-<!-- <p><button onclick='buttonClicked("addnewcoupon")'>Add Coupon</button></p>
-
-<p><button onclick='buttonClicked("deletecoupon")'>Delete Coupon</button></p>
-
-<p><button onclick='buttonClicked("view")'>View List Of Coupons</button></p>
-
-<p><button onclick='buttonClicked("updatecouponmenu")'>Update Existing Coupon</button></p> -->
 
 
 <form action ="signout" method="post"><br>
@@ -50,33 +42,6 @@ else{
 </form>
 <%} %>
 
-
-
-
-<!-- <script>
-function buttonClicked(action) {
- //  	alert("you chose " + param1);
-	// send to controllerrrrrrrrrrrrrrrr.............ajax 
-		
-    	var url = "http://localhost:8080/Coupons/CouponsWebsite";
-    	
-        //console.log("Clicked add to favorites ");
-
-        $.ajax({
-               type: "POST",
-               url: url,
-               data: {"fromUrl":"AdminMenu", "ToAction":action},   // serializes the form's elements. ??? send couponid
-               success: function(url) {
-                   console.log("Success. you sent ");
-                   //if(userAuthenticated == true)
-				   window.location.href = url;
-               },
-        	   error: function() {
-                   console.log("Fail. you sent ");
-          	   }
-             });
-}
-</script> -->
 
 
 </body>

@@ -11,7 +11,7 @@ public class CouponException extends Exception
 
 	/**
 	 * primary constructor for exception class. sends messge to super for print
-	 * @param str
+	 * @param str msg
 	 */
 	public CouponException(String str)
     {

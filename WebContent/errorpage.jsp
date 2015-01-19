@@ -24,9 +24,6 @@
 
 		</form>
 
-<%-- 	 <% response.setHeader("Refresh", "1; URL=/Coupons/errorpage");%>  
- --%><%-- 				<% response.sendRedirect(request.getHeader("referer")); %>
- --%>	
 
 </body>
 </html>
