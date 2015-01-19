@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="il.ac.hit.coupons.dto.Coupon" table="coupons">
+
+		<id name="id" type="int" column="id">
+		<generator class="increment"/>
+		</id>
+		<property name="name" column="name" type="string" />
+		<property name="description" column="description" type="string"/>
+		<property name="couponType" column="couponType" type="string"/>
+		<property name="availableAmount" column="availableAmount" type="int"/>
+		<property name="expireDate" column="expireDate" type="date"/>
+		<property name="expireTime" column="expireTime" type="string"/>
+		<property name="discountPercentage" column="discountPercentage" type="double"/>
+		<property name="originalPrice" column="originalPrice" type="double"/>
+		<property name="priceAfterDiscount" column="priceAfterDiscount" type="double"/>
+		<property name="location" column="location" type="string"/>
+		<property name="latitude" column="latitude" type="double"/>
+		<property name="longitude" column="longitude" type="double"/>
+		
+	</class>
+</hibernate-mapping>
+
+
+<!--  
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<property name="couponType" column="couponType" type="il.ac.hit.coupons.dto.CouponType"/>
+
+<property name="couponType" column="couponType" type="il.ac.hit.coupons.dto.CouponType" />
+
+<hibernate-mapping>
+   <class name="Employee" table="EMPLOYEE">
+      <meta attribute="class-description">
+         This class contains the employee detail. 
+      </meta>
+      <id name="id" type="int" column="id">
+         <generator class="native"/>
+      </id>
+      <property name="firstName" column="first_name" type="string"/>
+      <property name="lastName" column="last_name" type="string"/>
+      <property name="salary" column="salary" type="int"/>
+   </class>
+   
+   
+   <property name="couponType" column="couponType">
+		<type name="org.hibernate.type.EnumType">
+		<param name="couponType">il.ac.hit.coupons.dto.CouponType</param>
+		<param name="useNamed">true</param>
+		</type>
+		</property>
+</hibernate-mapping>  
+-->

@@ -1,0 +1,5 @@
+il.ac.hit.coupons.controller
+il.ac.hit.coupons.dao
+il.ac.hit.coupons.dao.imp
+il.ac.hit.coupons.dto
+il.ac.hit.coupons.exception
